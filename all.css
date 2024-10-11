@@ -1,3 +1,97 @@
 a{
     text-decoration: none;
+    color: pink;
 }
+a:hover{
+    text-decoration: none;
+    color: rgb(189, 29, 56);
+}
+/* aligning center and adding space to the nav lists */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+@media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }}
+    @media only screen and (min-width: 768px) {
+        nav {
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+        }
+        #nav-toggle{
+            display: block;
+        }
+        nav{
+            display: none;
+        }
+      }
+#nav-toggle{
+    display: none;
+}
+nav ul{
+    text-align: center;
+}
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+nav li:last :last-child{
+    margin-right: 0%;
+}
+#nav-list{
+    display: inline;
+    justify-content: center;
+    list-style: none;    
+} 
+/* styling my  header button */
+header button{
+    display: flex;
+    float: right;
+    position: fixed;
+    top: 6%;
+    right: 4%;
+    background-color: rgb(209, 14, 14);
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    width: 150px;
+    height: 30px;
+    border-radius: 29px;
+    box-shadow: red;
+    cursor: pointer;
+    justify-content: center;
+    font-size: large;
+    font-weight: bolder;
+    
+} 
+
+header button:hover{
+    display: block;
+    float: right;
+    position: fixed;
+    top: 6%;
+    right: 4%;
+    background-color: rgb(29, 15, 15);
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    width: 150px;
+    height: 30px;
+    border-radius: 29px;
+    box-shadow: red;
+    cursor: pointer;
+    font-weight: bolder;
+} 
+#first-header{
+    background:black;
+    padding: 20px;
+}
+#par{
+    background-color: black;
+}
+
