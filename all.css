@@ -6,6 +6,7 @@ a:hover{
     text-decoration: none;
     color: rgb(189, 29, 56);
 }
+ 
 /* aligning center and adding space to the nav lists */
 nav{
     display: flex;
@@ -13,22 +14,22 @@ nav{
     align-items: center;
       
 }
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) { */
     nav {
       flex-direction: column;
       align-items: center;
       width: 100%;
     }}
-    @media only screen and (min-width: 768px) {
-        nav {
+    /* @media only screen and (min-width: 768px) { */
+        /* nav { */
           flex-direction: row;
           justify-content: space-between;
           width: 100%;
         }
-        #nav-toggle{
+        /* #nav-toggle{ */
             display: block;
         }
-        nav{
+        /* nav{ */
             display: none;
         }
       }
@@ -93,5 +94,14 @@ header button:hover{
 }
 #par{
     background-color: black;
+}
+span a{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    font-style: oblique;
+    font-size: xx-large;  
+}
+span a:hover{
+    color: aliceblue;
 }
 
