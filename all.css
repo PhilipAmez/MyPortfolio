@@ -1,10 +1,15 @@
+body{
+    background-color: black;
+}
 a{
     text-decoration: none;
     color: pink;
 }
 a:hover{
     text-decoration: none;
-    color: rgb(189, 29, 56);
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    background-color: red;
 }
  
 /* aligning center and adding space to the nav lists */
@@ -49,16 +54,16 @@ nav li:last :last-child{
 #nav-list{
     display: inline;
     justify-content: center;
-    list-style: none;    
+    list-style: none; 
+    top: 6px;   
 } 
 /* styling my  header button */
 header button{
-    display: flex;
+    display: block;
     float: right;
-    position: fixed;
-    top: 6%;
+    top: 2%;
     right: 4%;
-    background-color: rgb(209, 14, 14);
+    background-color: rgb(255, 255, 255);
     border-width: 2px;
     border-color: rgb(0, 0, 0);
     width: 150px;
@@ -76,7 +81,7 @@ header button:hover{
     display: block;
     float: right;
     position: fixed;
-    top: 6%;
+    top: 2%;
     right: 4%;
     background-color: rgb(29, 15, 15);
     border-width: 2px;
@@ -88,20 +93,29 @@ header button:hover{
     cursor: pointer;
     font-weight: bolder;
 } 
-#first-header{
-    background:black;
-    padding: 20px;
-}
-#par{
+header button a:hover{
     background-color: black;
 }
-span a{
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: aliceblue;
-    font-style: oblique;
-    font-size: xx-large;  
+header button a{
+    color: black;
 }
-span a:hover{
-    color: aliceblue;
+#first-header{
+    background:black;
+    display: flex;
+    padding: 1px;
+
 }
 
+#second-header{
+    /* background-color: black; */
+    
+    padding: 20%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-image:url(images/bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hue;
+    filter: hue-rotate(360deg);
+    transition: 3s;
+}
